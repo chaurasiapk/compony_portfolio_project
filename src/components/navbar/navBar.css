@@ -1,0 +1,58 @@
+.nav-container{
+
+    margin-top: 80px;
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    padding: 12px 12px;
+    background: #283C63;
+    display: flex;
+    overflow: hidden;
+    gap:48px;
+
+  
+    
+  
+
+}
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+
+.nabBar{
+    flex: 1;
+    max-width: 1084px; 
+    width: 100%; 
+   display: flex;
+   justify-content: space-between; 
+}
+
+.left-nav{
+  display: flex;
+  gap:48px;
+}
+
+.nav-item{
+    background: none;
+    border: 0px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px; 
+    border: 2px solid  #283C63 ;
+} 
+ 
+.nav-item:hover{
+    border-bottom-color: #fff ;
+    cursor: pointer;
+}
+
+.nav-item:active{
+    color: #FF7069;
+}
