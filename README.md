@@ -1,2 +1,2 @@
-# compony_portfolio_page
+# compony_portfolio_project
 I have created this project for using react js . 
