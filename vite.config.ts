@@ -13,6 +13,9 @@ export default defineConfig({
   // Configure plugins for React support
   plugins: [react()],
   
+  // Base path for GitHub Pages deployment
+  base: '/compony_portfolio_project/',
+  
   // Configure module resolution and path aliases
   resolve: {
     alias: {

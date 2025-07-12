@@ -9,6 +9,7 @@ This project is a modern, responsive landing page built with React, TypeScript, 
 - **Type:** Frontend-only (no backend, no authentication, no database)
 - **Purpose:** Sample landing page for portfolio/demo
 - **Tech Stack:** React, TypeScript, Tailwind CSS, GSAP, Vite
+- **Live Demo:** [https://chaurasiapk.github.io/compony_portfolio_project](https://chaurasiapk.github.io/compony_portfolio_project)
 
 ## Screenshot
 
@@ -48,6 +49,47 @@ This project is a modern, responsive landing page built with React, TypeScript, 
    npm run build
    ```
 
+## Available Scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Fix ESLint errors |
+| `npm run type-check` | Run TypeScript type checking |
+| `npm run test` | Run tests |
+| `npm run test:ui` | Run tests with UI |
+| `npm run test:coverage` | Run tests with coverage |
+| `npm run format` | Format code with Prettier |
+| `npm run format:check` | Check code formatting |
+| `npm run analyze` | Analyze bundle size |
+| `npm run deploy` | Deploy to GitHub Pages |
+
+## Deployment
+
+### GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages. The site will be deployed automatically when you push to the `main` branch.
+
+**Manual deployment:**
+```bash
+npm run deploy
+```
+
+**Automatic deployment:**
+- Push to `main` branch
+- GitHub Actions will automatically build and deploy to GitHub Pages
+- Site will be available at: https://chaurasiapk.github.io/compony_portfolio_project
+
+### Other Platforms
+
+You can also deploy to other platforms like:
+- **Vercel:** Connect your GitHub repository
+- **Netlify:** Drag and drop the `dist` folder
+- **Firebase Hosting:** Use Firebase CLI
+
 ## Project Structure
 
 ```
@@ -70,6 +112,8 @@ compony_portfolio_project/
 │   └── vite-env.d.ts    # Vite type definitions
 ├── sceenshorts/         # Screenshots
 │   └── hero.png
+├── .github/workflows/   # GitHub Actions
+│   └── deploy.yml       # Deployment workflow
 ├── index.html           # Main HTML file
 ├── package.json         # Project metadata and scripts
 ├── tailwind.config.js   # Tailwind CSS config

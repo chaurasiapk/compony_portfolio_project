@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A modern production-grade portfolio project",
   "private": true,
+  "homepage": "https://chaurasiapk.github.io/compony_portfolio_project",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
@@ -19,10 +20,9 @@
     "test:coverage": "vitest --coverage",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
-    "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "analyze": "npm run build && npx vite-bundle-analyzer dist"
+    "analyze": "npm run build && npx vite-bundle-analyzer dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
@@ -31,13 +31,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.0",
-    "@storybook/addon-interactions": "^7.0.0",
-    "@storybook/addon-links": "^7.0.0",
-    "@storybook/blocks": "^7.0.0",
-    "@storybook/react": "^7.0.0",
-    "@storybook/react-vite": "^7.0.0",
-    "@storybook/testing-library": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -53,26 +46,15 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "husky": "^8.0.3",
+    "gh-pages": "^6.3.0",
     "jsdom": "^22.1.0",
-    "lint-staged": "^13.2.3",
     "postcss": "^8.4.27",
     "prettier": "^3.0.0",
-    "storybook": "^7.0.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-bundle-analyzer": "^0.7.0",
     "vitest": "^0.34.0"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,css,md}": [
-      "prettier --write"
-    ]
   },
   "browserslist": {
     "production": [
