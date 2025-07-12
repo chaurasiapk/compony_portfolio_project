@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    // ECMAScript target version for compilation
+    "target": "ES2020",
+    
+    // Use 'define' for class fields (modern JavaScript behavior)
+    "useDefineForClassFields": true,
+    
+    // Include DOM types and modern JavaScript features
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    
+    // Use ES modules for modern bundling
+    "module": "ESNext",
+    
+    // Skip type checking of declaration files for faster builds
+    "skipLibCheck": true,
+
+    /* Bundler mode configuration */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting and type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path mapping for cleaner imports */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* JavaScript file support */
+    "allowJs": true,
+    "checkJs": false
+  },
+  
+  // Include all TypeScript files in src directory
+  "include": ["src"],
+  
+  // Reference to node-specific TypeScript configuration
+  "references": [{ "path": "./tsconfig.node.json" }]
+} 

@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Compony Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Note:** This is a sample landing page project. It is not a full-fledged website or production application. This repository contains only the frontend code for demonstration and portfolio purposes.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a modern, responsive landing page built with React, TypeScript, and Tailwind CSS. It showcases a clean design, smooth animations, and modular component structure. The page is intended as a sample for portfolio or demonstration use only.
 
-### `npm start`
+- **Type:** Frontend-only (no backend, no authentication, no database)
+- **Purpose:** Sample landing page for portfolio/demo
+- **Tech Stack:** React, TypeScript, Tailwind CSS, GSAP, Vite
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Hero Section](sceenshorts/hero.png)
 
-### `npm test`
+*Screenshot of the landing page hero section showcasing the modern design and animations.*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Responsive design for desktop and mobile
+- Animated hero section and smooth scrolling
+- Modular React components (NavBar, Home, Services, Team, Testimonials, Contact, Footer)
+- Modern CSS with Tailwind and custom styles
+- Well-commented, clean codebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Quick Start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/compony_portfolio_project.git
+   cd compony_portfolio_project
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+compony_portfolio_project/
+├── src/
+│   ├── components/      # React components
+│   │   ├── navBar.tsx
+│   │   ├── home.tsx
+│   │   ├── services.tsx
+│   │   ├── team.tsx
+│   │   ├── testimonials.tsx
+│   │   ├── contact.tsx
+│   │   └── footer.tsx
+│   ├── assets/          # Images and static assets
+│   │   └── images/
+│   ├── styles/          # Tailwind and custom CSS
+│   │   └── index.css
+│   ├── App.tsx          # Main app component
+│   ├── main.tsx         # Entry point
+│   └── vite-env.d.ts    # Vite type definitions
+├── sceenshorts/         # Screenshots
+│   └── hero.png
+├── index.html           # Main HTML file
+├── package.json         # Project metadata and scripts
+├── tailwind.config.js   # Tailwind CSS config
+├── vite.config.ts       # Vite build config
+├── tsconfig.json        # TypeScript config
+├── vitest.config.ts     # Test config
+├── postcss.config.js    # PostCSS config
+├── .eslintrc.cjs        # ESLint config
+├── .prettierrc          # Prettier config
+├── .gitignore           # Git ignore rules
+├── .nvmrc               # Node version
+└── README.md            # Project documentation
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for demonstration and educational purposes only. Feel free to use or adapt for your own portfolio.

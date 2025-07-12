@@ -1,0 +1,80 @@
+/**
+ * Main Stylesheet
+ * 
+ * This file contains the global styles for the portfolio project.
+ * It includes Tailwind CSS imports, custom base styles, component classes,
+ * and utility animations.
+ */
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Base layer styles
+ * 
+ * Defines fundamental styles for HTML elements
+ */
+@layer base {
+  /* Set Inter as the primary font family */
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Global background and text colors */
+  body {
+    background: #273c63;
+    color: #ffffff;
+  }
+}
+
+/**
+ * Component layer styles
+ * 
+ * Defines reusable component classes with Tailwind utilities
+ */
+@layer components {
+  /* Base button styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+
+  /* Primary button variant */
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  /* Secondary button variant */
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+
+  /* Card component styles */
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+
+  /* Input field styles */
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200;
+  }
+}
+
+/**
+ * Custom animations
+ * 
+ * Blinking cursor animation for typewriter effect
+ */
+.animate-blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
